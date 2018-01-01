@@ -1,0 +1,14 @@
+body {
+  background-color: #f3f3f3;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC, Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei, sans-serif; }
+  body .pic_list {
+    list-style-type: none; }
+    body .pic_list .show_pic .pic_link {
+      color: #8590a6; }
+      body .pic_list .show_pic .pic_link:hover {
+        color: #175199; }
+  body .placeholder .placeholder_pic {
+    width: 400px;
+    height: 400px; }
+  body .placeholder .placeholder_text {
+    font-weight: 600; }

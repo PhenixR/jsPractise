@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        margin-bottom: 0;
+    }
+    .pic_list {
+        display: flex;
+        padding-left: 0;
+        .show_pic {
+            margin: 0 5px 0 5px;
+            .pic_link {
+                text-decoration: none;
+            }
+        }
+    }
+    .placeholder {
+        display:flex;
+        flex-direction: column;
+        align-items: center; 
+        .placeholder_pic {}
+        .placeholder_text {}
+    }
+
+}
