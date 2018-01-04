@@ -12,8 +12,10 @@ function preparePlaceholder() {
     placeholder.setAttribute("class","placeholder_pic");
     placeholder.setAttribute("src","img/placeholder.gif");
     placeholder.setAttribute("alt","my image gallery");
+    placeholder.style = "width:400px; height:400px;"
     var description = document.createElement("p");
     description.setAttribute("class","placeholder_text");
+    description.style = "font-weight:600";
     var desetext = document.createTextNode("Choose an image");
     description.appendChild(desetext);
     var list = document.getElementsByClassName("pic_list")[0];
