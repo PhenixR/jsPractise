@@ -1,3 +1,11 @@
+function insertAfter(newElement,targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+        parent.appendChild(newElement);
+    } else {
+        parent.insertBefore(newElement,targetElement.nextSibling);
+    }
+}
 function preparePlaceholder() {
     if (!document.createElement) return false;
     var placeholder = document.createElement("img");
@@ -9,8 +17,8 @@ function preparePlaceholder() {
     var desetext = document.createTextNode("Choose an image");
     description.appendChild(desetext);
     var list = document.getElementsByClassName("pic_list")[0];
-    list.parentNode.insertBefore(placeholder,list);
-    list.parentNode.insertBefore(description,list);
+    insertAfter(placeholder,list);
+    insertAfter(description,placeholder)
 }
 function showPic(whichpic) {
     if (!document.getElementsByClassName("placeholder_pic")) {
